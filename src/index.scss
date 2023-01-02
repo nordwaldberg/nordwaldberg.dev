@@ -1,1 +1,29 @@
+@import 'styles/variables';
+@import 'styles/mixins';
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+html, body {
+  height: 100%;
+  background-color: $background-color;
+  color: $main-font-color;
+  background-image: url('assets/white-noize.svg');
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+*::-webkit-scrollbar-thumb {
+  display: none;
+}
+
+#root {
+  padding: 40px;
+  height: 100%;
+}
