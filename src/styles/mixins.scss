@@ -14,19 +14,19 @@
   border-radius: 5px;
 
   &:hover {
-    background-color: $submain-color-red;
+    background-color: $subcolor-red;
   }
 }
 
 @mixin grey-to-red-btn {
-  background-color: $main-font-color-half-opacity;
+  background-color: #D6D6D6;
   color: $background-color;
   padding: 2px 10px;
   border-radius: 5px;
 
   &:hover {
     color: $main-font-color;
-    background-color: $submain-color-red;
+    background-color: $subcolor-red;
   }
 }
 
@@ -37,6 +37,6 @@
   color: $main-font-color;
 
   &:hover {
-    background-color: $submain-color-red;
+    background-color: $subcolor-red;
   }
 }
