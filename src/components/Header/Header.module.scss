@@ -1,0 +1,10 @@
+@import "src/index";
+
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.navLink:last-of-type {
+  margin-left: 40px;
+}
