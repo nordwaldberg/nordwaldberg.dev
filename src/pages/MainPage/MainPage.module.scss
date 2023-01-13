@@ -1,0 +1,78 @@
+@import "src/index";
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 40px;
+  height: calc(100% - 40px);
+}
+
+.blob {
+  position: absolute;
+  width: 80%;
+  height: 70%;
+  background-image: url("../../assets/Red Blob.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: calc(100% - 70px);
+  z-index: 1;
+}
+
+.greeting {
+  font-weight: 700;
+  font-size: 4.5rem;
+}
+
+.greetingSubText {
+  font-size: 1.5rem;
+}
+
+.socialLinks {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  justify-content: space-between;
+  height: 300px;
+}
+
+.link {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: $links-opacity;
+  transition: 150ms;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.github {
+  background-image: url("../../assets/Github - Negative.svg");
+}
+
+.telegram {
+  background-image: url("../../assets/Telegram - Negative.svg");
+}
+
+.gmail {
+  background-image: url("../../assets/Google - Negative.svg");
+}
+
+.linkedin {
+  background-image: url("../../assets/LinkedIn - Negative.svg");
+}
+
+.instagram {
+  background-image: url("../../assets/Instagram - Negative.svg");
+}
+

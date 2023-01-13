@@ -20,14 +20,16 @@ const App = () => {
 
     return (
         <Router>
-            <Header/>
-            <Routes>
-                <Route path="/" element={<MainPage/>}/>
-                <Route path="/about" element={<AboutPage/>}/>
-                <Route path='*' element={
-                    <Navigate to={"/"}/>
-                }/>
-            </Routes>
+            <div className={styles.pageWrapper}>
+                <Header/>
+                <Routes>
+                    <Route path="/" element={<MainPage/>}/>
+                    <Route path="/about" element={<AboutPage/>}/>
+                    <Route path='*' element={
+                        <Navigate to={"/"}/>
+                    }/>
+                </Routes>
+            </div>
         </Router>
     );
 };

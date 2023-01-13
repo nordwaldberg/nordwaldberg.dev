@@ -24,7 +24,6 @@ html, body {
 }
 
 #root {
-  padding: 40px;
   height: 100%;
 }
 
@@ -37,24 +36,12 @@ a {
   cursor: pointer;
   text-decoration: none;
   color: $main-font-color;
-  font-size: 25px;
-
-  &::after {
-    content: '';
-    display: block;
-    background-color: $main-font-color;
-    position: absolute;
-    left: 0;
-    width: 0;
-    height: 2px;
-    transition: width .3s ease-out;
-  }
 
   &:hover {
     outline: none;
   }
+}
 
-  &:hover::after {
-    width: 100%;
-  }
+li {
+  list-style: none;
 }

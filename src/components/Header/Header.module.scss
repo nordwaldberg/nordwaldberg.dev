@@ -5,6 +5,31 @@
   align-items: center;
 }
 
-.navLink:last-of-type {
-  margin-left: 40px;
+.navLink {
+  font-size: 20px;
+  opacity: $links-opacity;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:last-of-type {
+    margin-left: 40px;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    background-color: $main-font-color;
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: width .3s ease-out;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
 }
+
