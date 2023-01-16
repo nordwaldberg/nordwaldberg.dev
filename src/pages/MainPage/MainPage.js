@@ -4,7 +4,8 @@ import styles from './MainPage.module.scss';
 const MainPage = () => {
     return (
         <div className={styles.wrapper}>
-            <div className={styles.blob}></div>
+            <div className={styles.lineBlob}></div>
+            <div className={styles.solidBlob}></div>
             <div className={styles.mainContent}>
                 <span className={styles.greeting}>
                     Hi! <br/>
